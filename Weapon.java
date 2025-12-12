@@ -1,7 +1,7 @@
 public class Weapon {
     private String name;
     private int damage;
-    private int durability;
+    private int durability; 
 
     // Constructor
     /**Constructor to create a new Weapon
