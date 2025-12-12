@@ -1,0 +1,24 @@
+public class GameTest {
+public static void main(String[] args) {
+// Create weapons
+Weapon sword = new Weapon("Short Sword", 10, 20);
+Weapon axe = new Weapon("Battle Axe", 15, 10);
+
+
+// Create players
+Player p1 = new Player("Aria", 100, sword);
+Player p2 = new Player("Bran", 100, axe);
+
+
+// Player 1 attacks Player 2
+p1.attack(p2);
+System.out.println(p2.getName() + " health: " + p2.getHealth());
+System.out.println(p1.getName() + " weapon durability: " + p1.getWeapon().getDurability());
+
+
+// Test defensive copy
+Weapon swordCopy = p1.getWeapon();
+swordCopy.weaken(5); // should NOT affect p1's weapon
+System.out.println("Original weapon durability after external weaken: " + p1.getWeapon().getDurability());
+}
+}
