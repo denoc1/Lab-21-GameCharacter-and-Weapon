@@ -51,7 +51,7 @@ In this game-themed project, a Player **has a** Weapon and can attack other Play
 ## Getting Started
 
 1. Complete each TODO in `Weapon.java` and `Player.java`.
-2. Run `Lab21.java` to test your implementation.
+2. Run `Lab21GamePlay.java` to test your implementation.
 3. Verify output and defensive copying by reading the console.
 
 ---
